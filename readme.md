@@ -38,7 +38,7 @@ Began by creating my project's folder structure, and creating the script.js, and
     `saveToStorage()`
 * Render Posts: `renderPosts()`
     - Clear container -> loop posts -> `createElement` -> `appendChild` to each card
-* Form Validation: `validateForm()`\
+* Form Validation: `validateForm()`
     - Check title + content not empty -> set error spans -> return true/false
 * Form submit handler\
     -`event.preventDefault()` -> `validateForm()`
