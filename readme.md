@@ -66,11 +66,9 @@ posts = `loadFromStorage()` -> `renderPosts()`
 
 ### What I learned
 
-  1. Progressive console logging and intermediate usage of console logging in terminal and synchronicity with chrome dev tools. This really helped me out when coding typos, or I had invalid variables present. I could correct them on the spot.
-  
-  Practicing console logging checks and balances with chrome dev tools added a considerable amount of time to my completion of this assessment, and I will be more conservative with my console logging (especially those left in this script) on future projects. 
+  1. Outlining a path for JS code in alignment with the HTML & CSS files expedites my coding process.
 
-  3. Using the Constraint Validation API error handling and validations.
+  2. data-id on the buttons use. 
 
   3. Adding complexity requirements and validations to form fields.
 

@@ -37,7 +37,7 @@ function loadFromStorage() {
 }
 
 // write posts to array
-function savedToStorage() {
+function saveToStorage() {
     localStorage.setItem('blog-posts', JSON.stringify(posts));
 }
 
@@ -45,31 +45,32 @@ function savedToStorage() {
 function renderPosts() {
     postsContainer.innerHTML = '';
 
-if (posts.length === 0) {
-    postsContainer.innerHTML = '<p class="no-posts">No posts yet. Write your first one!</p>';
-    return;
-}
+    if (posts.length === 0) {
+        postsContainer.innerHTML = '<p class="no-posts">No posts yet. Write your first one!</p>';
+        return;
+    }
 
-// Render newest posts first
-[...posts].reverse().forEach(post => {
-    const card = document.createElement('article');
-    // Store post's ID on card element
-    card.dataset.id = post.id;
+    // Render newest posts first
+    [...posts].reverse().forEach(post => {
+        const card = document.createElement('article');
+        card.classList.add('post-card');
+        // Store post's ID on card element
+        card.dataset.id = post.id;
 
-    card.innerHtml = `
-    <h3>${post.title}</h3>
-    <p class="post-meta"${post.timestamp}</p>
-    <p class="post-content"?${post.content}</p>
-    <div class="post-actions">
-    <button class="edit-btn" data=id="${post.id}">Edit</button>
-    <button class="delete-btn" data-id="${post.id}">Delete</button>
-    </div>
-    `;
+        card.innerHTML = `
+            <h3>${post.title}</h3>
+            <p class="post-meta">${post.timestamp}</p>
+            <p class="post-content">${post.content}</p>
+            <div class="post-actions">
+                <button class="edit-btn" data-id="${post.id}">Edit</button>
+                <button class="delete-btn" data-id="${post.id}">Delete</button>
+            </div>
+        `;
 
-    postsContainer.appendChild(card);
-});
+        postsContainer.appendChild(card);
+    });
 
-  console.log('renderPosts() called. Current posts array:', posts);
+    console.log('renderPosts() called. Current posts array:', posts);
 }
 
 // FORM VALIDATION //
@@ -80,14 +81,60 @@ function validateForm() {
     titleError.textContent = '';
     contentError.textContent = '';
 
-    if (titleInput.ariaValueMax.trim() === '') {
+    if (titleInput.value.trim() === '') {
         titleError.textContent = 'Post title is required.';
-        isvalid = false;
+        isValid = false;
     }
 
-    if (contentInput.ariaValueMax.trim() ==='') {
+    if (contentInput.value.trim() === '') {
         contentError.textContent = 'Post content is required.';
         isValid = false;
     }
     return isValid;
 }
+
+// FORM SUBMISSION HANDLER //
+postForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    if (!validateForm()) {
+        // Validation Failed
+        return;
+    }
+
+    const titleValue = titleInput.value.trim();
+    const contentValue = contentInput.value.trim();
+
+    if (editingPostId === null) {
+        // -- CREATE POST -- //
+        const newPost = {
+            id: generateId(),
+            title: titleValue,
+            content: contentValue,
+            timestamp: new Date().toLocaleString()
+        };
+
+        posts.push(newPost);
+
+        console.log('New post created:', newPost);
+        console.log('Posts array after add:', posts);
+
+    } else {
+        const postIndex = posts.findIndex(p => p.id === editingPostId);
+
+        if (postIndex !== -1) {
+            posts[postIndex].title = titleValue;
+            posts[postIndex].content = contentValue;
+        }
+
+        editingPostId = null;
+        formHeading.textContent = 'New Post';
+        submitBtn.textContent = 'Publish Post';
+        cancelBtn.classList.add('hidden');
+    }
+
+    saveToStorage();
+    renderPosts();
+    postForm.reset();
+
+});

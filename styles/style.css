@@ -81,7 +81,8 @@ main {
     color: #c0392b;
     font-size: 0.82rem;
     margin-top: 0.3rem;
-    min-height: 1em; /* prevents layout shift */
+    min-height: 1em;
+    /* prevents layout shift */
 }
 
 /* FORM BUTTONS */
@@ -93,11 +94,11 @@ main {
 
 button {
     padding: 0.5rem 1.1rem;
-  border: none;
-  border-radius: 5px;
-  font-size: 0.9rem;
-  cursor: pointer;
-  transition: background-color 0.2s;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
 }
 
 #sumit-btn {
@@ -132,8 +133,7 @@ button {
     border-radius: 8px;
     padding: 1.2rem 1.5rem;
     margin-bottom: 1rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07)
-    4px solid #1a1a2e;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07) 4px solid #1a1a2e;
 }
 
 .post-card h3 {
@@ -150,7 +150,8 @@ button {
 .post-content {
     font-size: 0.95rem;
     margin-bottom: 1rem;
-    white-space: pre-wrap; /* Preserves line breaks from textarea */
+    white-space: pre-wrap;
+    /* Preserves line breaks from textarea */
 }
 
 .post-actions {
@@ -177,7 +178,7 @@ button {
 }
 
 .no-posts {
-  color: var(--color-text-secondary, #888);
-  font-style: italic;
-  font-size: 0.95rem;
+    color: var(--color-text-secondary, #888);
+    font-style: italic;
+    font-size: 0.95rem;
 }
