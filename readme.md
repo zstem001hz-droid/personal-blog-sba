@@ -29,9 +29,13 @@ Began by creating my project's folder structure, and creating the script.js, and
 
 <ins>Javascript Outline</ins>
 * State & DOM References\
-    `let posts = []` array
-    `getElementById()` for every element.
-* Utility Functions
+    - `let posts = []` array\
+    - `let editingPostId = null\
+    - `getElementById()` for every element.
+* Utility Functions\
+    `generateId()`\
+    `loadFromStorage()`\
+    `saveToStorage()`
 * Render Posts:
     - `renderPosts()`
 * Form Validation `validateForm()`
