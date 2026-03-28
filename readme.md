@@ -54,8 +54,6 @@ Began by creating my project's folder structure, and creating the script.js, and
 
   - ChatGBT
     - debugging and Q&A
-    - muted hex color style recommendations
-    - debug odd web tools behavior which turned out to be a typo. expected form.reset(); was coded as form.requestFullscreen(); - resolved
 
 ## Author
 
