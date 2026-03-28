@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="./styles/style.css">
     <script defer src="./scripts/script.js"></script>
 </head>
+
 <body>
 
     <header>
@@ -14,6 +16,8 @@
     </header>
 
     <main>
+
+        <!-- POST FORM SECTION -->
         <section id="form-section"></section>
         <h2 id="form-heading">New Post</h2>
 
@@ -24,8 +28,29 @@
                 <input type="text" id="post-title" placeholder="Enter post title" />
                 <span class="error-msg" id="title-error"></span>
             </div>
+
+            <div class="field-group">
+                <label for="post-content">Content</label>
+                <textarea id="post-content" rows="6" placeholder="Write your post here..."></textarea>
+                <span class="error-msg" id="content-error"></span>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" id="submit-btn">Publish Post</button>
+                <button type="button" id="cancel-btn" class="hidden">Cancel Edit</button>
+            </div>
         </form>
+        </section>
+
+        <!-- POSTS DESPLAY SECTION -->
+        <section id="posts-section">
+            <h2>Posts</h2>
+            <div id="posts-container">
+                <!-- Posts render here with javascript -->
+            </div>
+        </section>
+
     </main>
-    
 </body>
+
 </html>
