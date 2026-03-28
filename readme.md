@@ -36,11 +36,16 @@ Began by creating my project's folder structure, and creating the script.js, and
     `generateId()`\
     `loadFromStorage()`\
     `saveToStorage()`
-* `renderPosts()`
+* Render Posts: `renderPosts()`
     - Clear container -> loop posts -> `createElement` -> `appendChild` to each card
-* Form Validation `validateForm()`
-* Form submit handler
+* Form Validation: `validateForm()`
+* Form submit handler\
+    -`event.preventDefault()` -> `validateForm()`
     - `saveToStorage()` -> `renderPosts()` -> reset form
+`postsContainer' click handler(event delegation)
+    - `cancelBtn` click handler
+* Initialization (runs on page load)\
+posts = `loadFromStorage()` -> `renderPosts()`
 
 
 
