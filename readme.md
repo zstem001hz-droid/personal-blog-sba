@@ -30,7 +30,7 @@ Began by creating my project's folder structure, and creating the script.js, and
 <ins>Javascript Outline</ins>
 * State & DOM References\
     `let posts = []` array\
-    `let editingPostId = null`
+    `let editingPostId = null`\
     `getElementById()` for every element.
 * Utility Functions\
     `generateId()`\
@@ -38,11 +38,12 @@ Began by creating my project's folder structure, and creating the script.js, and
     `saveToStorage()`
 * Render Posts: `renderPosts()`
     - Clear container -> loop posts -> `createElement` -> `appendChild` to each card
-* Form Validation: `validateForm()`
+* Form Validation: `validateForm()`\
+    - Check title + content not empty -> set error spans -> return true/false
 * Form submit handler\
     -`event.preventDefault()` -> `validateForm()`
     - `saveToStorage()` -> `renderPosts()` -> reset form
-`postsContainer' click handler(event delegation)
+* `postsContainer` click handler(event delegation)
     - `cancelBtn` click handler
 * Initialization (runs on page load)\
 posts = `loadFromStorage()` -> `renderPosts()`
