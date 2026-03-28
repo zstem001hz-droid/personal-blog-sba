@@ -28,7 +28,7 @@ Imagine you are building a personal project: a simple, client-side only blog or 
 Began by creating my project's folder structure, and creating the script.js, and style.css, and index.html files inside the project folder's directories. Formatted the HTML document including classes and IDs for javascript linking and CSS styling, and generically coded the CSS for a visibly pleasing minimalist website representation that I might update at the tail end of the project, time permitting.
 
 <ins>Javascript Outline</ins>
-* State & DOM References
+* State & DOM References\
     `let posts = []` array
     `getElementById()` for every element.
 * Utility Functions
