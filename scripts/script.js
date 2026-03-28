@@ -71,3 +71,23 @@ if (posts.length === 0) {
 
   console.log('renderPosts() called. Current posts array:', posts);
 }
+
+// FORM VALIDATION //
+function validateForm() {
+    let isValid = true;
+
+    // Clear previous error message
+    titleError.textContent = '';
+    contentError.textContent = '';
+
+    if (titleInput.ariaValueMax.trim() === '') {
+        titleError.textContent = 'Post title is required.';
+        isvalid = false;
+    }
+
+    if (contentInput.ariaValueMax.trim() ==='') {
+        contentError.textContent = 'Post content is required.';
+        isValid = false;
+    }
+    return isValid;
+}

@@ -89,8 +89,10 @@ Zac White
 [developer.mozilla.org](https://developer.mozilla.org/en-US/)
 - `date.now()`
 - `math.random()`
-- `math.floor()`
+- `math.floor()`\
+
 [javascript.info](https://javascript.info/)
+
 [jshint.com](https://jshint.com/) 
 
 [MDN Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API)
