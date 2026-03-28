@@ -25,7 +25,9 @@ Imagine you are building a personal project: a simple, client-side only blog or 
 
 ## My process
 
-Began by creating my project's folder structure, and creating the script.js, and style.css, and index.html files inside the project folder's directories.  
+Began by creating my project's folder structure, and creating the script.js, and style.css, and index.html files inside the project folder's directories. Formatted the HTML document including classes and IDs for javascript linking and CSS styling, and generically coded the CSS for a visibly pleasing minimalist website representation that I might update at the tail end of the project, time permitting.  
+
+
 
 ### Built with
 
@@ -61,14 +63,12 @@ Zac White
 
 ## Acknowledgments
 
-HTML attribute: pattern
   - [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/pattern).  
   - [MDN autocomplete attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/autocomplete) autocomplete
   - [MDN Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API)
   - [MDN localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
   - [html.spec.whatwg.org](html.spec.whatwg.org)
   - [Looping through localStorage in HTML5 and JavaScript](https://stackoverflow.com/questions/3138564/looping-through-localstorage-in-html5-and-javascript#3138591)
-  - [stackoverflow.com](https://stackoverflow.com/questions/19619428/html5-form-validation-pattern-alphanumeric-with-spaces) -username
   
 DOM Manipulation
   - [youtube.com](https://www.youtube.com/@TraversyMedia/search?query=DOM%20crash) Traversy Media
