@@ -175,3 +175,9 @@ button {
 .delete-btn:hover {
     background-color: #922b21;
 }
+
+.no-posts {
+  color: var(--color-text-secondary, #888);
+  font-style: italic;
+  font-size: 0.95rem;
+}

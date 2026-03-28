@@ -86,27 +86,27 @@ Zac White
 
 ## Acknowledgments
 
-  - [developer.mozilla.org](https://developer.mozilla.org/en-US/)
-     - `date.now()`
-     - `math.random()`
-     - `math.floor()`
-- [javascript.info](https://javascript.info/)
-- [jshint.com](https://jshint.com/) 
+[developer.mozilla.org](https://developer.mozilla.org/en-US/)
+- `date.now()`
+- `math.random()`
+- `math.floor()`
+[javascript.info](https://javascript.info/)
+[jshint.com](https://jshint.com/) 
 
-  - [MDN Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API)
+[MDN Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API)
 
-  - [MDN localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
+ [MDN localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
 
-  - [html.spec.whatwg.org](html.spec.whatwg.org)
+ [html.spec.whatwg.org](html.spec.whatwg.org)
 
-  - [Looping through localStorage in HTML5 and JavaScript](https://stackoverflow.com/questions/3138564/looping-through-localstorage-in-html5-and-javascript#3138591)
+ [Looping through localStorage in HTML5 and JavaScript](https://stackoverflow.com/questions/3138564/looping-through-localstorage-in-html5-and-javascript#3138591)
   
 DOM Manipulation
-  - [youtube.com](https://www.youtube.com/@TraversyMedia/search?query=DOM%20crash) Traversy Media
+ [youtube.com](https://www.youtube.com/@TraversyMedia/search?query=DOM%20crash) Traversy Media
 
 ## Reflections
 
-1. 
+1. Although it as time consuming, and delayed coding the JavaScript for this project, drafting an outline after the HTML and CSS code were completed turned out to be a useful exercise, and the outline was a good resource. 
 
 -
 
