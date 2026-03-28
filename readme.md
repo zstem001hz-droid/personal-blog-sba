@@ -86,16 +86,23 @@ Zac White
 
 ## Acknowledgments
 
-  - [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/pattern).  
-  - [MDN autocomplete attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/autocomplete) autocomplete
+  - [developer.mozilla.org](https://developer.mozilla.org/en-US/)
+     - `date.now()`
+     - `math.random()`
+     - `math.floor()`
+- [javascript.info](https://javascript.info/)
+- [jshint.com](https://jshint.com/) 
+
   - [MDN Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API)
+
   - [MDN localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
+
   - [html.spec.whatwg.org](html.spec.whatwg.org)
+
   - [Looping through localStorage in HTML5 and JavaScript](https://stackoverflow.com/questions/3138564/looping-through-localstorage-in-html5-and-javascript#3138591)
   
 DOM Manipulation
   - [youtube.com](https://www.youtube.com/@TraversyMedia/search?query=DOM%20crash) Traversy Media
-  - [jshint.com](https://jshint.com/) 
 
 ## Reflections
 
