@@ -120,13 +120,15 @@ postForm.addEventListener('submit', function (event) {
         console.log('Posts array after add:', posts);
 
     } else {
+        // ENTER EDIT MODE //
         const postIndex = posts.findIndex(p => p.id === editingPostId);
 
         if (postIndex !== -1) {
             posts[postIndex].title = titleValue;
             posts[postIndex].content = contentValue;
         }
-
+        
+        // QUIT EDITTING //
         editingPostId = null;
         formHeading.textContent = 'New Post';
         submitBtn.textContent = 'Publish Post';
@@ -135,6 +137,54 @@ postForm.addEventListener('submit', function (event) {
 
     saveToStorage();
     renderPosts();
+    // Clear form fields
     postForm.reset();
 
+});
+
+// EVENT DELEGATION - EDIT & DELETE //
+postsContainer.addEventListener('click', function (event) {
+    const target = event.target;
+
+    // DELETE //
+    if (target.classList.contains('delete-btn')) {
+        const idToDelete = target.dataset.id;
+
+        console.log('Delete clicked. Target ID:', idToDelete);
+
+        posts = posts.filter(p => p.id !== idToDelete);
+
+        saveToStorage();
+        renderPosts();
+    }
+    // EDIT //
+    if (target.classList.contains('edit-btn')) {
+        const idToEdit = target.dataset.id;
+        const postToEdit = posts.find(p => p.id === idToEdit);
+
+        console.log('Edit clicked. Post found:', postToEdit);
+
+        if (!postToEdit) return;
+
+        titleInput.value = postToEdit.title;
+        contentInput.value = postToEdit.content;
+
+        editingPostId = idToEdit;
+        formHeading.textContent = 'Edit Post';
+        submitBtn.textContent = 'Save Changes';
+        cancelBtn.classList.remove('hidden');
+
+        postForm.scrollIntoView({ behavior: 'smooth' });
+    }
+});
+
+// CANCEL EDIT //
+cancelBtn.addEventListener('click', function () {
+    editingPostId = null;
+    postForm.reset();
+    titleError.textContent = '';
+    contentError.textContent = '';
+    formHeading.textContent = 'New Post';
+    submitBtn.textContent = 'Publish Post';
+    cancelBtn.classList.add('hidden');
 });
