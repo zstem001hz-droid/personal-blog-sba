@@ -18,31 +18,32 @@
     <main>
 
         <!-- POST FORM SECTION -->
-        <section id="form-section"></section>
-        <h2 id="form-heading">New Post</h2>
+        <section id="form-section">
+            <h2 id="form-heading">New Post</h2>
 
-        <form id="post-form">
+            <form id="post-form">
 
-            <div class="field-group">
-                <label for="post-title">Title</label>
-                <input type="text" id="post-title" placeholder="Enter post title" />
-                <span class="error-msg" id="title-error"></span>
-            </div>
+                <div class="field-group">
+                    <label for="post-title">Title</label>
+                    <input type="text" id="post-title" placeholder="Enter post title" />
+                    <span class="error-msg" id="title-error"></span>
+                </div>
 
-            <div class="field-group">
-                <label for="post-content">Content</label>
-                <textarea id="post-content" rows="6" placeholder="Write your post here..."></textarea>
-                <span class="error-msg" id="content-error"></span>
-            </div>
+                <div class="field-group">
+                    <label for="post-content">Content</label>
+                    <textarea id="post-content" rows="6" placeholder="Write your post here..."></textarea>
+                    <span class="error-msg" id="content-error"></span>
+                </div>
 
-            <div class="form-actions">
-                <button type="submit" id="submit-btn">Publish Post</button>
-                <button type="button" id="cancel-btn" class="hidden">Cancel Edit</button>
-            </div>
-        </form>
+                <div class="form-actions">
+                    <button type="submit" id="submit-btn">Publish Post</button>
+                    <button type="button" id="cancel-btn" class="hidden">Cancel Edit</button>
+                </div>
+
+            </form>
         </section>
 
-        <!-- POSTS DESPLAY SECTION -->
+        <!-- POSTS DISPLAY SECTION -->
         <section id="posts-section">
             <h2>Posts</h2>
             <div id="posts-container">

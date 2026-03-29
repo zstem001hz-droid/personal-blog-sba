@@ -128,7 +128,7 @@ postForm.addEventListener('submit', function (event) {
             posts[postIndex].content = contentValue;
         }
         
-        // QUIT EDITTING //
+        // QUIT EDITING //
         editingPostId = null;
         formHeading.textContent = 'New Post';
         submitBtn.textContent = 'Publish Post';
@@ -188,3 +188,10 @@ cancelBtn.addEventListener('click', function () {
     submitBtn.textContent = 'Publish Post';
     cancelBtn.classList.add('hidden');
 });
+
+// INITIALIZATION //
+posts = loadFromStorage();
+
+console.log('posts loaded from the localStorage on init', posts);
+
+renderPosts();
