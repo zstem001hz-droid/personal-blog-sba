@@ -48,9 +48,7 @@ Began by creating my project's folder structure, and creating the script.js, and
 * Initialization (runs on page load)\
 posts = `loadFromStorage()` -> `renderPosts()`
 
-
-
-
+Once all files were written, I copleted the required testing.
 
 ### Built with
 
@@ -63,15 +61,19 @@ posts = `loadFromStorage()` -> `renderPosts()`
 - Form Validation
 - Local Storage Implementation
 
-
 ### What I learned
 
   1. Outlining a path for JS code in alignment with the HTML & CSS files expedites my coding process.
 
-  2. data-id on the buttons use. 
+  2. The data-id attribute serves as a bridge between my HTML and JavaScript that lets the event handlers identify exactly which post was clicked without needing to search the DOM. 
 
   3. Adding complexity requirements and validations to form fields.
 
+  4. State equates to current data held in application memory. The consistent pattern I notice throughout: change state → save → render. Those steps repeat in the submit handler, the delete branch, and the edit branch. I gained an understanding that posts and editingPostId are the points of truth, and that the DOM is always a reflection of that state rather than the source of it.
+  
+  6. I learned how event delegation works by attaching one listener to a parent container and using event.target to determine what was clicked, and it's more efficient than attaching individual listeners to every button. 
+  
+  7. I also worked through the difference between create mode and edit mode inside a form handler, controlled entirely by whether editingPostId is null or holds a value. 
 
 ## AI Collaboration
 
@@ -106,14 +108,8 @@ DOM Manipulation
 
 ## Reflections
 
-1. Although it as time consuming, and delayed coding the JavaScript for this project, drafting an outline after the HTML and CSS code were completed turned out to be a useful exercise, and the outline was a good resource. 
+1. Although it as time consuming, and delayed coding the JavaScript for this project, drafting an outline after the HTML and CSS code were completed turned out to be a useful exercise, and the outline was a good resource.mI also decided to take a more simplified approach to this assignment, especially foollowing struggles I had with the verification form assignment. That decision condensed the js script file for this project considerably. 
 
--
+2. I noticed a consistent pattern throughout this project: change state → save → render. That sequence repeats in the submit handler, the delete branch, and the edit branch. Once I internalized that rhythm, the whole file made sense structurally.
 
-2. 
-
--
-
-3. 
-
--
+3. This go-round, I improved on real-world debugging instincts — reading console errors, tracing mismatched braces, and catching silent bugs.
