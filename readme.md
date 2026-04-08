@@ -77,7 +77,7 @@ Once all files were written, I copleted the required testing.
 
 ## AI Collaboration
 
-  - ChatGBT
+  - ChatGPT
     - debugging and Q&A
 
 ## Author
